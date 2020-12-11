@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.get ('/',(req,res)=>{
-    res.json(database.user);
+    res.json('its working');
 });
 app.post('/signin',(req,res)=>{
     db.select('email','hash').from('login')
